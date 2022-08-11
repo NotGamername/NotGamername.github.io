@@ -29,15 +29,9 @@ div.nav {
     padding-top: 0px;
     padding-bottom: 0px;
     border-radius: 20px;
-    border-bottom-width: medium;
-    border-bottom-style: solid;
-    border-bottom-color: black;
-    border-left-width: medium;
-    border-left-style: solid;
-    border-left-color: black;
-    border-right-width: medium;
-    border-right-style: solid;
-    border-right-color: black;
+    border-width: medium;
+    border-style: solid;
+    border-color: black;
 }
 a.nav1 {
     font-size: 30px;
