@@ -28,8 +28,7 @@ div.nav {
     background-color: white;
     padding-top: 0px;
     padding-bottom: 0px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
     border-bottom-width: medium;
     border-bottom-style: solid;
     border-bottom-color: black;
@@ -46,7 +45,7 @@ a.nav1 {
     color: black;
     position: relative;
     display: inline-block;
-    padding: 8px 5px;
+    padding: 8px;
     padding-left: 31.74%;
     padding-right: 31.74%;
     margin: 0;
@@ -61,7 +60,7 @@ a.nav2 {
     color: black;
     position: relative;
     display: inline-block;
-    padding: 8px 5px;
+    padding: 8px;
     padding-left: 34.44%;
     padding-right: 34.44%;
     margin: 0;
@@ -76,7 +75,7 @@ a.nav3 {
     color: black;
     position: relative;
     display: inline-block;
-    padding: 8px 5px;
+    padding: 8px;
     padding-left: 24.98%;
     padding-right: 24.98%;
     margin: 0;
@@ -91,7 +90,7 @@ a.nav4 {
     color: black;
     position: relative;
     display: inline-block;
-    padding: 8px 5px;
+    padding: 8px;
     padding-left: 33.09%;
     padding-right: 33.09%;
     margin: 0;
@@ -106,7 +105,7 @@ a.navLast {
     color: black;
     position: relative;
     display: inline-block;
-    padding: 8px 5px;
+    padding: 8px;
     padding-left: 32.41%;
     padding-right: 32.41%;
     margin: 0;
@@ -133,8 +132,6 @@ a.navLast:hover {
 p.intro {
     position: relative;
     display: inline-block;
-    /* width: 76.4%;
-    left: 10%; */
     margin: 0;
     padding: 40px 30px;
     background-color: white;
@@ -142,11 +139,9 @@ p.intro {
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     color: black;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-width: medium;
-    border-style: solid;
-    border-color: black;
+    border-bottom-width: medium;
+    border-bottom-style: solid;
+    border-bottom-color: black;
 }
 b.ourstory {
     font-size: 30px;
