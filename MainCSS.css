@@ -46,7 +46,7 @@ a.nav1 {
     color: black;
     position: relative;
     display: inline-block;
-    padding: 5px;
+    padding: 8px 5px;
     padding-left: 31.74%;
     padding-right: 31.74%;
     margin: 0;
@@ -61,7 +61,7 @@ a.nav2 {
     color: black;
     position: relative;
     display: inline-block;
-    padding: 5px;
+    padding: 8px 5px;
     padding-left: 34.44%;
     padding-right: 34.44%;
     margin: 0;
@@ -76,9 +76,9 @@ a.nav3 {
     color: black;
     position: relative;
     display: inline-block;
-    padding: 5px;
-    padding-left: 33.09%;
-    padding-right: 33.09%;
+    padding: 8px 5px;
+    padding-left: 24.98%;
+    padding-right: 24.98%;
     margin: 0;
     text-decoration: none;
     border-bottom-width: medium;
@@ -91,7 +91,22 @@ a.nav4 {
     color: black;
     position: relative;
     display: inline-block;
-    padding: 5px;
+    padding: 8px 5px;
+    padding-left: 33.09%;
+    padding-right: 33.09%;
+    margin: 0;
+    text-decoration: none;
+    border-bottom-width: medium;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
+a.navLast {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    position: relative;
+    display: inline-block;
+    padding: 8px 5px;
     padding-left: 32.41%;
     padding-right: 32.41%;
     margin: 0;
@@ -99,8 +114,6 @@ a.nav4 {
 }
 a.nav1:hover {
     background-color: rgb(255, 218, 185, 0.8);
-    /* border-top-left-radius: 20px;
-    border-top-right-radius: 20px; */
 }
 a.nav2:hover {
     background-color: rgb(255, 218, 185, 0.8);
@@ -109,6 +122,9 @@ a.nav3:hover {
     background-color: rgb(255, 218, 185, 0.8);
 }
 a.nav4:hover {
+    background-color: rgb(255, 218, 185, 0.8);
+}
+a.navLast:hover {
     background-color: rgb(255, 218, 185, 0.8);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -120,7 +136,7 @@ p.intro {
     width: 76.4%;
     left: 10%;
     margin: 0;
-    padding: 30px;
+    padding: 40px 30px;
     background-color: white;
     text-align: center;
     font-size: 20px;
