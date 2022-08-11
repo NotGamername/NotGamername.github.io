@@ -133,8 +133,8 @@ a.navLast:hover {
 p.intro {
     position: relative;
     display: inline-block;
-    width: 76.4%;
-    left: 10%;
+    /* width: 76.4%;
+    left: 10%; */
     margin: 0;
     padding: 40px 30px;
     background-color: white;
