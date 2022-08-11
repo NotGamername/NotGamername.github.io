@@ -14,7 +14,7 @@ h1.header {
     background-color: aliceblue;
     margin: 0;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 30px;
 }
 
@@ -52,74 +52,88 @@ div.nav {
     padding-bottom: 0px;
     border-radius: 20px;
     border-width: medium;
-    border-style: dotted;
+    border-style: solid;
     border-color: black;
 }
-a.navL {
+a.nav1 {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
     color: black;
     position: relative;
     display: inline-block;
     padding: 5px;
-    padding-left: 12.8%;
-    padding-right: 12.8%;
+    padding-left: 31.74%;
+    padding-right: 31.74%;
     margin: 0;
-    border-right-width: medium;
-    border-right-color: black;
-    border-right-style: solid;
+    text-decoration: none;
+    border-bottom-width: medium;
+    border-bottom-color: black;
+    border-bottom-style: solid;
 }
-a.navM {
+a.nav2 {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
     color: black;
     position: relative;
     display: inline-block;
     padding: 5px;
-    padding-left: 12.8%;
-    padding-right: 12.8%;
+    padding-left: 34.44%;
+    padding-right: 34.44%;
     margin: 0;
-    border-right-width: medium;
-    border-right-color: black;
-    border-right-style: solid;
-    border-left-width: medium;
-    border-left-color: black;
-    border-left-style: solid;
+    text-decoration: none;
+    border-bottom-width: medium;
+    border-bottom-color: black;
+    border-bottom-style: solid;
 }
-a.navR {
+a.nav3 {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
     color: black;
     position: relative;
     display: inline-block;
     padding: 5px;
-    padding-left: 12.8%;
-    padding-right: 12.8%;
+    padding-left: 33.09%;
+    padding-right: 33.09%;
     margin: 0;
-    border-left-width: medium;
-    border-left-color: black;
-    border-left-style: solid;
+    text-decoration: none;
+    border-bottom-width: medium;
+    border-bottom-color: black;
+    border-bottom-style: solid;
 }
-a.navL:hover {
+a.nav4 {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    padding-left: 32.41%;
+    padding-right: 32.41%;
+    margin: 0;
+    text-decoration: none;
+}
+a.nav1:hover {
     background-color: rgb(255, 218, 185, 0.8);
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-a.navM:hover {
-    background-color: rgb(255, 218, 185, 0.8);
-}
-a.navR:hover {
-    background-color: rgb(255, 218, 185, 0.8);
     border-top-right-radius: 20px;
+}
+a.nav2:hover {
+    background-color: rgb(255, 218, 185, 0.8);
+}
+a.nav3:hover {
+    background-color: rgb(255, 218, 185, 0.8);
+}
+a.nav4:hover {
+    background-color: rgb(255, 218, 185, 0.8);
+    border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
 p.intro {
     background-color: white;
-    margin-top: 45px;
     margin-left: auto;
     margin-right: auto;
-    width: 81%;
+    width: 80%;
     text-align: center;
     padding: 30px;
     font-size: 20px;
