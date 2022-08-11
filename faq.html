@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FAQ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./MainCSS.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">Home</a>
+        <a href="./manifesto.html">Calendarian Manifesto</a>
+        <a href="./bdaycalc.html">Birthday Calculator</a>
+        <!-- <a href="./faq.html">FAQs</a> -->
+    </div>
+
+    <span style="font-size:30px;cursor:pointer;position:fixed" onclick="openNav()">&#9776; Menu</span>
+
+    <div id="main">
+        <h1 class="header">
+            Frequently Asked Questions
+        </h1>
+
+        <p class="intro">
+            <b class="ourstory">Find answers to your frequently asked questions below</b>
+        </p>
+
+        <br>
+        <br>
+    </div>
+
+<script>
+    
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birthday Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./MainCSS.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./index.html">Home</a>
+        <a href="./manifesto.html">Calendarian Manifesto</a>
+        <a href="./bdaycalc.html">Birthday Calculator</a>
+        <!-- <a href="./faq.html">FAQs</a> -->
+    </div>
+
+    <span style="font-size:30px;cursor:pointer;position:fixed" onclick="openNav()">&#9776; Menu</span>
+
+    <div id="main">
+        <h1 class="header">
+            Birthday Calculator
+        </h1>
+
+        <p class="intro">
+            <b class="ourstory">Use the calculator below to discover your New Calendarian birthday!</b>
+        </p>
+
+        <div class="bdayinput">
+            <label for="birthday">Enter your old calendar birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <button onclick="bday()">Calculate</button>
+
+            <!-- <p id="indate"></p> -->
+            <!-- <p id="inyear"></p>    -->
+            <!-- <p id="yearssince1970"></p> -->
+            <!-- <p id="leapyearssince1970"></p> -->
+            <!-- <p id="daysinyear"></p>   -->
+            <!-- <p id="dayofyear"></p>      -->
+            <p id="newbday"></p>        
+        </div>
+        <br>
+        <br>
+    </div>
+
+<script>
+    
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+
+const month = ["January","February","March","April","May","June","September","October","November","Universal Vacation Period day"];
+const msminute = 1000 * 60;
+const mshour = msminute * 60;
+const msday = mshour * 24;
+const msyear = msday * 365;
+const msleapyear = msday * 366;
+
+function bday() {
+    var indate = document.getElementById("birthday").value;
+    var inyear = parseInt(indate);
+    var yeardiff = inyear - 1970;
+    var leapyear = yeardiff + 2;
+    var numleapyears = Math.floor(leapyear/4);
+    let ourmonth;
+    let newbday;
+
+    let ms = Date.parse(indate);
+
+    if (leapyear % 4 == 0){
+        var dayyear = 366;
+        var dayofyear = ((ms-(((yeardiff - numleapyears) * msyear) + (numleapyears * msleapyear)))/msday)+2;
+    } else {
+        var dayyear = 365;
+        var dayofyear = ((ms-(((yeardiff - numleapyears) * msyear) + (numleapyears * msleapyear)))/msday)+1;
+    }
+
+    if ((1 <= dayofyear) && (dayofyear <= 40)){
+        ourmonth = month[0];
+    } else if ((40 < dayofyear) && (dayofyear <= 80)){
+        ourmonth = month[1];
+    } else if ((80 < dayofyear) && (dayofyear <= 120)){
+        ourmonth = month[2];
+    } else if ((120 < dayofyear) && (dayofyear <= 160)){
+        ourmonth = month[3];
+    } else if ((160 < dayofyear) && (dayofyear <= 200)){
+        ourmonth = month[4];
+    } else if ((200 < dayofyear) && (dayofyear <= 240)){
+        ourmonth = month[5];
+    } else if ((240 < dayofyear) && (dayofyear <= 280)){
+        ourmonth = month[6];
+    } else if ((280 < dayofyear) && (dayofyear <= 320)){
+        ourmonth = month[7];
+    } else if ((320 < dayofyear) && (dayofyear <= 360)){
+        ourmonth = month[8];
+    } else {
+        ourmonth = month[9];
+    }
+
+    if (dayofyear % 40 == 0){
+        newbday = 40;
+    } else {
+        newbday = dayofyear % 40;
+    }
+
+    // document.getElementById("indate").innerHTML = "<br>" + "Input date is: " + indate;
+    // document.getElementById("inyear").innerHTML = "Input year is: " + inyear;
+    // document.getElementById("yearssince1970").innerHTML = "Years since 1970: " + yeardiff;
+    // document.getElementById("leapyearssince1970").innerHTML = "Leap years since 1970: " + numleapyears;
+    // document.getElementById("daysinyear").innerHTML = "Days in the chosen year: " + dayyear;
+    // document.getElementById("dayofyear").innerHTML = "This is the " + dayofyear + " day of the chosen year";
+    document.getElementById("newbday").innerHTML = "<br>" + "Your new birthday is on " + ourmonth + " " + newbday + " of the New Calendarian year!";
+}
+
+</script>
+</body>
+</html>
