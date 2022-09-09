@@ -93,6 +93,21 @@ a.nav4 {
     border-bottom-color: black;
     border-bottom-style: solid;
 }
+a.nav5 {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+    padding-left: 27.68%;
+    padding-right: 27.68%;
+    margin: 0;
+    text-decoration: none;
+    border-bottom-width: medium;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+}
 a.navLast {
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
@@ -100,8 +115,8 @@ a.navLast {
     position: relative;
     display: inline-block;
     padding: 8px;
-    padding-left: 32.41%;
-    padding-right: 32.41%;
+    padding-left: 16.86%;
+    padding-right: 16.86%;
     margin: 0;
     text-decoration: none;
 }
@@ -115,6 +130,9 @@ a.nav3:hover {
     background-color: rgb(255, 218, 185, 0.8);
 }
 a.nav4:hover {
+    background-color: rgb(255, 218, 185, 0.8);
+}
+a.nav5:hover {
     background-color: rgb(255, 218, 185, 0.8);
 }
 a.navLast:hover {
